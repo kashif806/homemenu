@@ -26,3 +26,7 @@ $app = require __DIR__.'/../bootstrap/app.php';
 */
 
 $app->run();
+
+$db = app('db')->select("SELECT * FROM users");
+
+var_dump($db);
